@@ -25,6 +25,7 @@ return new class extends Migration
             $table->String("stdpsmtitle");
             $table->String("psmType");
             $table->String("image");
+            $table->string('industry_status')->default('Unassigned');
             $table->timestamps();
         });
     }
